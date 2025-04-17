@@ -151,4 +151,25 @@ body {
     .upgrade-menu.open {
         transform: scaleY(1);
     }
-}
+
+
+      }
+      .points-increment {
+        position: absolute;
+        font-size: 20px;
+        color: #ff9900;
+        animation: floatUp 1s ease-out;
+        pointer-events: none;
+      }
+      
+      @keyframes floatUp {
+        0% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+      }
+        
